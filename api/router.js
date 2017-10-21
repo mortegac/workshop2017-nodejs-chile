@@ -4,7 +4,8 @@ import colors from 'colors/safe';
 
 import {
     trackController,
-    albumController
+    albumController,
+    bandController
 } from './controllers';
 
 
@@ -16,3 +17,4 @@ export const router = express.Router();
 router.get('/tracks', trackController.getList);
 
 router.get('/albums', albumController.getList);
+router.get('/bands', bandController.getList);
